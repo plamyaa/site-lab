@@ -422,7 +422,7 @@ button {
 }
 
 .block-second__header {
-    height: 57px;
+    min-height: 57px;
     margin: auto;
 }
 
@@ -471,7 +471,6 @@ button {
 
 
 .block-third .content-wrapper {
-    padding: 0 13.681vw;
     padding: 100px 0;
     margin-bottom: 0;
     position: relative;
@@ -482,6 +481,7 @@ button {
 
 .block-third .content-wrapper .text-wrapper {
     max-width: 511px;
+    padding: 0 13.681vw;
     text-align: center;
     margin: 0 auto 100px;
 }
@@ -504,6 +504,7 @@ button {
 }
 
 .block-third__content {
+    padding: 0 13.681vw;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -548,7 +549,11 @@ button {
 }
 
 @media (max-width: 992px) {
-    .block-third .content-wrapper {
+    .block-third__content {
+        padding: 0 7vw;
+    }
+
+    .block-third .content-wrapper .text-wrapper {
         padding: 0 7vw;
     }
 }
