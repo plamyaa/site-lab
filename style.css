@@ -162,6 +162,9 @@ button {
     color: #737373;
 }
 
+.navbar__menu__item a {
+    color:#737373;
+}
 .burger-shower, .hamburger-menu{
     margin-left: auto;
     cursor: pointer;
