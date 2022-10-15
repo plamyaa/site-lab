@@ -165,6 +165,7 @@ button {
 .navbar__menu__item a {
     color:#737373;
 }
+
 .burger-shower, .hamburger-menu{
     margin-left: auto;
     cursor: pointer;
@@ -407,6 +408,7 @@ button {
     justify-content: center;
 }
 
+
 /* -------------block-second------------- */
 
 
@@ -469,6 +471,7 @@ button {
 
 
 .block-third .content-wrapper {
+    padding: 0 13.681vw;
     padding: 100px 0;
     margin-bottom: 0;
     position: relative;
@@ -501,7 +504,6 @@ button {
 }
 
 .block-third__content {
-    padding: 0 13.681vw;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -546,7 +548,7 @@ button {
 }
 
 @media (max-width: 992px) {
-    .block-third__content {
+    .block-third .content-wrapper {
         padding: 0 7vw;
     }
 }
