@@ -11,10 +11,11 @@
 
 /* -------------removed default styles */
 
-body, p, button, h1, h2, h3, h4, h5, h6, a, button {
+* {
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 /* -------------Font styles------------- */
@@ -123,7 +124,7 @@ button {
     }
 }
 
-.block__main-paragraph {
+.main-paragraph {
     max-width: clamp(225px, 37vw, 511px);
     margin: auto;
     margin-top: 10px;
@@ -142,18 +143,18 @@ button {
     z-index: 1000;
 }
 
-.navbar__links {
+.header__links {
     display: none;
     position: relative;
     top: -2px;
     right: 100px;
 }
 
-.navbar__link {
+.header__link {
     margin-right: 90%;
 }
 
-.navbar__menu {
+.header__menu {
     margin-left: 120px;
     list-style-type: none;
     padding-left: 0;
@@ -162,7 +163,7 @@ button {
     color: #737373;
 }
 
-.navbar__menu__item a {
+.header__menu__item a {
     color:#737373;
 }
 
@@ -204,7 +205,7 @@ button {
     color: #737373;
 }
 
-.hamburger-menu .sidebar-menu {
+.sidebar-menu {
     visibility: hidden;
     position: fixed;
     top: 87px;
@@ -217,16 +218,15 @@ button {
     box-sizing: border-box;
     overflow: hidden;
     z-index: 1000;
+    
 }
 
-.sidebar-menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-.hamburger-menu a {
-  color: #737373;
-  text-decoration: none;
+.sidebar-menu__item {
+    display: flex;
+    margin-left: 48%;
+    color: #737373;
+    text-decoration: none;
+    margin-top: 15px;
 }
 
 #hamburger-input:checked + .hamburger-menu .sidebar-menu {
@@ -332,17 +332,17 @@ button {
     color: #FFFFFF;
 }
 
-.card__image-wrapper {
+.header__card__image-wrapper {
     height: 48px;
     display: flex;
     align-items: center;
 }
 
-.card__image {
+.header__card__image {
     max-height: 48px;
 }
 
-.card__header {
+.header__card__header {
     margin: 10px 0;
 }
 
@@ -404,7 +404,7 @@ button {
     white-space: nowrap;
 }
 
-.block-first__card .card__image-wrapper {
+.block-first__card .block-first__card__image-wrapper {
     justify-content: center;
 }
 
@@ -443,24 +443,24 @@ button {
     box-sizing: border-box;
 }
 
-.block-second__card .card__header {
+.block-second__card .block-second__card__header {
     text-align: start;
     margin: 0 0 15px;
     padding: 0 20px 0 0;
 }
 
-.block-second__card .card__paragraph {
+.block-second__card .block-second__card__paragraph {
     text-align: start;
     margin-bottom: 30px;
     width: calc(100% + 3px);
 }
 
-.block-second__card .card__image-wrapper {
+.block-second__card .block-second__card__image-wrapper {
     right: 30px;
     height: auto;
 }
 
-.block-second__card .card__image {
+.block-second__card .block-second__card__image {
     position: relative;
     right: 30px;
     max-height: 100%;
@@ -481,7 +481,6 @@ button {
 
 .block-third .content-wrapper .text-wrapper {
     max-width: 511px;
-    padding: 0 13.681vw;
     text-align: center;
     margin: 0 auto 100px;
 }
@@ -567,7 +566,7 @@ button {
     justify-content: space-evenly;
     justify-items: center;
     align-items: center;
-    grid-gap: 60px;
+    grid-gap: 58px;
     grid-template-columns: repeat(6, 1fr);
 }
 
@@ -693,6 +692,12 @@ button {
 }
 
 .block-fiveth__button {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    color: #FFA62B;
     padding: 10px 20px;
     width: 160px;
     height: 44px;
@@ -701,17 +706,13 @@ button {
     background: transparent;
 }
 
-.block-fiveth__button__text {
-    white-space: nowrap;
-    color: #FFA62B;
-}
-
 .block-fiveth__card_blue .block-fiveth__button {
     border-color: #FFFFFF;
-}
-
-.block-fiveth__card_blue .block-fiveth__button__text {
     color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
 }
 
 .block-fiveth__card_blue .block-fiveth__header {
@@ -733,6 +734,7 @@ button {
         order: inherit;
     }
 }
+
 
 /* -------------footer------------- */
 
