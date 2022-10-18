@@ -223,7 +223,8 @@ button {
 
 .sidebar-menu__item {
     display: flex;
-    margin-left: 48%;
+    justify-content: center;
+    text-align: center;
     color: #737373;
     text-decoration: none;
     margin-top: 15px;
@@ -239,14 +240,14 @@ button {
         display: block; 
     }
     
-    .navbar__menu {
+    .header__menu {
         display: none;
     }
 
     .hamburger-menu {
         display: inline;
     }
-    .navbar__links {
+    .header__links {
         display: flex;
         gap: 50%;
     }
